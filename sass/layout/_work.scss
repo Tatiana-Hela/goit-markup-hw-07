@@ -1,0 +1,32 @@
+.work {
+    padding-bottom: 94px;
+    background: var(--contrasting-color);
+}
+.work-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.work-description {
+    padding: 27px 0;
+    font-family: var(--primary-font);
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--contrasting-color);
+}
+.work-wrraper-description {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+}
+.work-wrraper {
+    position: relative;
+}
