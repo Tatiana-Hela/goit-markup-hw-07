@@ -19,18 +19,14 @@
 }
 .team-name {
     margin-bottom: 10px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(16px, 500, 19px);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-font-color);
 }
-.team-speciality {
+.team-function {
     margin-bottom: 16px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(16px, 400, 19px);
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -50,20 +46,20 @@
     background-color: var(--contrasting-color);
 
     transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--accent-color);
-}
+
 .social-list-icon {
     fill: var(--icon-color);
 
     transition: fill var(--transition-dur-and-func);
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: var(--contrasting-color);
-}
-.social-list-link.current {
-    background-color: var(--accent-color);
+
+    .social-list-link:hover &,
+    .social-list-link:focus & {
+        fill: var(--contrasting-color);
+    }
 }

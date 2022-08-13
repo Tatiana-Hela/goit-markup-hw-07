@@ -32,17 +32,15 @@
 
 .modal-close-btn-icon {
     transition: fill var(--transition-dur-and-func);
-}
 
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-    fill: var(--accent-color);
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+        fill: var(--accent-color);
+    }
 }
 
 .terms {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.17;
+    @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }

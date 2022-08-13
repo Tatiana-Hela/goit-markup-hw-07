@@ -18,18 +18,20 @@
 
     transition: background-color var(--transition-dur-and-func),
         border var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+    }
 }
 .client-list-icon {
     fill: var(--icon-color);
 
     transition: fill var(--transition-dur-and-func);
-}
-.client-list-link:hover .client-list-icon,
-.client-list-link:focus .client-list-icon {
-    fill: var(--accent-color);
-}
-.client-list-link:hover,
-.client-list-link:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
+
+    .client-list-link:hover &,
+    .client-list-link:focus & {
+        fill: var(--accent-color);
+    }
 }

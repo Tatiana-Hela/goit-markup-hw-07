@@ -12,14 +12,13 @@
 .work-description {
     padding: 27px 0;
     font-family: var(--primary-font);
-    font-weight: 700;
-    line-height: 1.14;
+    @include font(14px, 700, 16px);
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--contrasting-color);
 }
-.work-wrraper-description {
+.work-wrapper-description {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -27,6 +26,6 @@
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
 }
-.work-wrraper {
+.work-wrapper {
     position: relative;
 }

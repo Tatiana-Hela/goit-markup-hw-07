@@ -10,17 +10,13 @@
 .logo-footer-link {
     font-family: var(--secondary-font);
     font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(26px, 700, 31px);
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 .logo-studio-footer {
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    @include font(26px, 700, 31px);
     letter-spacing: 0.03em;
     color: var(--contrasting-color);
 }
@@ -31,9 +27,8 @@
 }
 
 .contact-address {
-    font-weight: 400;
+    @include font(14px, 400, 24px);
     font-style: normal;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--contrasting-color);
 
@@ -45,9 +40,8 @@
 }
 .contact-mail-secondary {
     padding-top: 9px;
-    font-weight: 400;
+    @include font(14px, 400, 24px);
     font-style: normal;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
@@ -59,9 +53,8 @@
 }
 .contact-phone-number-secondary {
     padding-top: 9px;
-    font-weight: 400;
+    @include font(14px, 400, 24px);
     font-style: normal;
-    line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
@@ -72,8 +65,7 @@
     color: var(--accent-color);
 }
 .social-title-footer {
-    font-weight: 700;
-    line-height: 1.14;
+    @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--contrasting-color);
@@ -126,9 +118,7 @@
 .subscription-title-form {
     margin-bottom: 20px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
@@ -139,11 +129,9 @@
     width: 360px;
     height: 50px;
     padding-left: 16px;
-    letter-spacing: 0.03em;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(16px, 400, 20px);
+    letter-spacing: 0.03em;
     color: var(--contrasting-color);
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -159,11 +147,9 @@
 .subscription-input-form::placeholder {
     display: flex;
     align-items: center;
-    letter-spacing: 0.03em;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    @include font(16px, 400, 20px);
+    letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
 }
@@ -180,9 +166,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
+    @include font(16px, 700, 30px);
 
     color: var(--contrasting-color);
 

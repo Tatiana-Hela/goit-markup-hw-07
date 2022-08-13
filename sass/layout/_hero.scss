@@ -1,7 +1,7 @@
 .hero {
     margin: auto;
     max-width: 1600px;
-    height: 600px;
+    min-height: 600px;
     padding: 200px 0;
     background-image: linear-gradient(
             rgba(47, 48, 58, 0.4),
@@ -18,9 +18,7 @@
 }
 .hero-title {
     margin-bottom: 30px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font(44px, 900, 60px);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -31,9 +29,7 @@
 .modal-btn {
     padding: 10px 32px;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
+    @include font(16px, 700, 30px);
     letter-spacing: 0.06em;
     color: var(--contrasting-color);
     background: var(--accent-color);
@@ -44,10 +40,11 @@
 
     transition: background var(--transition-dur-and-func),
         box-shadow var(--transition-dur-and-func);
-}
-.modal-btn:hover,
-.modal-btn :focus {
-    background: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        background: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
 }

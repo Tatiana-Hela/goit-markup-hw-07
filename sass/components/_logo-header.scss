@@ -2,11 +2,8 @@
     padding-top: 24px;
     padding-bottom: 24px;
     margin-right: 93px;
-    font-family: var(--contrasting-color);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-family: var(--secondary-font);
+    @include font(26px, 700, 31px);
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }

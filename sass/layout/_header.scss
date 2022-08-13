@@ -1,8 +1,8 @@
-.link.current {
+.menu__link.menu__link--current {
     position: relative;
     color: var(--accent-color);
 }
-.link.current::after {
+.menu__link--current::after {
     position: absolute;
     content: '';
     display: block;
@@ -12,7 +12,7 @@
     background: var(--accent-color);
     border-radius: 2px;
 }
-.page-header-container {
+.page-header {
     display: flex;
     align-items: center;
 }
@@ -21,34 +21,34 @@
     align-items: center;
 }
 
-.menu-link {
+.menu__link {
     padding: 32px 0;
     display: block;
-    font-weight: 500;
-    line-height: 1.14;
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
 
     color: var(--secondary-font-color);
 
     transition: color var(--transition-dur-and-func);
+
+    &:focus,
+    &:hover {
+        color: var(--accent-color);
+    }
 }
-.menu.list {
+.menu {
     display: flex;
     align-items: center;
-    font-weight: 500;
-    line-height: 1.43;
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
     color: var(--secondary-font-color);
 }
 
-.menu-item + .menu-item {
+.menu__item:not(:first-child) {
     padding-left: 50px;
 }
-.menu-link:focus,
-.menu-link:hover {
-    color: var(--accent-color);
-}
-.contact.list {
+
+.contact {
     display: flex;
     margin-left: auto;
 }
@@ -60,36 +60,36 @@
     fill: currentColor;
     margin-right: 10px;
 }
-.contact-mail {
+.contact-list__mail {
     display: flex;
     align-items: center;
     padding: 32px 0;
     font-family: inherit;
-    font-weight: 500;
-    line-height: 1.43;
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
     color: inherit;
 
     transition: color var(--transition-dur-and-func);
-}
-.contact-mail:hover,
-.contact-mail:focus {
-    color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.contact-phone-number {
+.contact-list__phone-number {
     display: flex;
     align-items: center;
     padding: 32px 0;
     padding-left: 50px;
-    font-weight: 500;
-    line-height: 1.43;
+    @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
     color: inherit;
 
     transition: color var(--transition-dur-and-func);
-}
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-    color: var(--accent-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
