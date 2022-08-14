@@ -1,12 +1,12 @@
-.clients-container {
+.clients {
     padding: 94px 0;
 }
-.clients-list {
+.clients__list {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.client-list-link {
+.client-brand__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,13 +25,13 @@
         border-radius: 4px;
     }
 }
-.client-list-icon {
+.client-brand__icon {
     fill: var(--icon-color);
 
     transition: fill var(--transition-dur-and-func);
 
-    .client-list-link:hover &,
-    .client-list-link:focus & {
+    .client-brand__link:hover &,
+    .client-brand__link:focus & {
         fill: var(--accent-color);
     }
 }

@@ -3,42 +3,38 @@
     margin: auto;
     background: #2f303a;
 }
-.logo-footer {
+.contacts-footer__logo {
     margin-top: 60px;
     margin-bottom: 20px;
 }
-.logo-footer-link {
-    font-family: var(--secondary-font);
-    font-style: normal;
-    @include font(26px, 700, 31px);
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-}
-.logo-studio-footer {
+
+.logo__studio--white {
     font-family: var(--secondary-font);
     @include font(26px, 700, 31px);
     letter-spacing: 0.03em;
     color: var(--contrasting-color);
 }
 
-.footer-list {
+.contacts-footer__list {
     margin-right: 70px;
     margin-bottom: 60px;
 }
 
-.contact-address {
+.contacts-footer__address {
     @include font(14px, 400, 24px);
     font-style: normal;
     letter-spacing: 0.03em;
     color: var(--contrasting-color);
 
     transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
-.contact-address:hover,
-.contact-address:focus {
-    color: var(--accent-color);
-}
-.contact-mail-secondary {
+
+.contacts-footer__mail {
     padding-top: 9px;
     @include font(14px, 400, 24px);
     font-style: normal;
@@ -46,12 +42,14 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
-.contact-mail-secondary:hover,
-.contact-mail-secondary:focus {
-    color: var(--accent-color);
-}
-.contact-phone-number-secondary {
+
+.contacts-footer__phone {
     padding-top: 9px;
     @include font(14px, 400, 24px);
     font-style: normal;
@@ -59,24 +57,26 @@
     color: rgba(255, 255, 255, 0.6);
 
     transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
-.contact-phone-number-secondary:hover,
-.contact-phone-number-secondary:focus {
-    color: var(--accent-color);
-}
-.social-title-footer {
+
+.social-footer__title {
     @include font(14px, 700, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--contrasting-color);
 }
 
-.social-list-footer {
+.social-footer__list {
     margin-top: 20px;
     display: flex;
     gap: 10px;
 }
-.social-list-link-footer {
+.social-footer__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,24 +86,28 @@
     background-color: rgba(255, 255, 255, 0.1);
 
     transition: background-color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
 }
-.social-list-link-footer:hover,
-.social-list-link-footer:focus {
-    background-color: var(--accent-color);
-}
-.social-list-icon-footer {
+
+.social-footer__icon {
     fill: var(--contrasting-color);
 
     transition: fill var(--transition-dur-and-func);
+
+    .social-footer__link:hover &,
+    .social-footer__link:focus & {
+        fill: var(--contrasting-color);
+    }
 }
-.social-list-link-footer:hover .social-list-icon-footer,
-.social-list-link-footer:focus .social-list-icon-footer {
-    fill: var(--contrasting-color);
-}
-.social-links-footer {
+
+.social-footer {
     margin-top: 72px;
 }
-.container.footer-link {
+.container.contacts-footer {
     display: flex;
 }
 .subscription-form {
@@ -112,10 +116,10 @@
     display: flex;
     flex-direction: column;
 }
-.subscription-input-box {
+.subscription-form__input-box {
     display: flex;
 }
-.subscription-title-form {
+.subscription-form__title {
     margin-bottom: 20px;
     font-style: normal;
     @include font(14px, 700, 16px);
@@ -124,7 +128,7 @@
 
     color: var(--contrasting-color);
 }
-.subscription-input-form {
+.subscription-form__input {
     margin-right: 12px;
     width: 360px;
     height: 50px;
@@ -139,21 +143,23 @@
     border-radius: 4px;
 
     transition: border var(--transition-dur-and-func);
-}
-.subscription-input-form:focus {
-    outline: none;
-    border: 1px solid #188ce8;
-}
-.subscription-input-form::placeholder {
-    display: flex;
-    align-items: center;
-    font-style: normal;
-    @include font(16px, 400, 20px);
-    letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
+    &:focus {
+        outline: none;
+        border: 1px solid #188ce8;
+    }
+
+    &::placeholder {
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        @include font(16px, 400, 20px);
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
 }
-.subscription-btn {
+
+.subscription-form__btn {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 29px;
@@ -167,16 +173,15 @@
     letter-spacing: 0.06em;
     font-style: normal;
     @include font(16px, 700, 30px);
-
     color: var(--contrasting-color);
-
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
     transform: background var(--transition-dur-and-func);
-}
-.subscription-btn:hover,
-.subscription-btn:focus {
-    background-color: #188ce8;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }

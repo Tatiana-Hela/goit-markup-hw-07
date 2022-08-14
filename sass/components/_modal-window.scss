@@ -14,7 +14,7 @@
         transform var(--transition-dur-and-func);
 }
 
-.modal-close-btn {
+.modal__close-btn {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -30,17 +30,18 @@
     transition: border-color var(--transition-dur-and-func);
 }
 
-.modal-close-btn-icon {
+.modal__close-btn-icon {
     transition: fill var(--transition-dur-and-func);
 
-    .modal-close-btn:hover &,
-    .modal-close-btn:focus & {
+    .modal__close-btn:hover &,
+    .modal__close-btn:focus & {
         fill: var(--accent-color);
     }
 }
 
 .terms {
-    @include font(14px, 700, 16px);
+    @include font(14px, 400, 24px);
+    font-style: normal;
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }

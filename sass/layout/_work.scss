@@ -2,14 +2,14 @@
     padding-bottom: 94px;
     background: var(--contrasting-color);
 }
-.work-list {
+.work__menu {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.work-description {
+.work__description {
     padding: 27px 0;
     font-family: var(--primary-font);
     @include font(14px, 700, 16px);
@@ -18,7 +18,7 @@
     text-transform: uppercase;
     color: var(--contrasting-color);
 }
-.work-wrapper-description {
+.work__wrapper-description {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -26,6 +26,6 @@
     height: 70px;
     background: rgba(47, 48, 58, 0.8);
 }
-.work-wrapper {
+.work__wrapper {
     position: relative;
 }

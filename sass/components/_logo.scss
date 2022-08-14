@@ -3,10 +3,11 @@
     padding-bottom: 24px;
     margin-right: 93px;
     font-family: var(--secondary-font);
+    font-style: normal;
     @include font(26px, 700, 31px);
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
-.logo-studio {
+.logo__studio {
     color: var(--secondary-font-color);
 }
