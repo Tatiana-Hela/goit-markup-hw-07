@@ -30,13 +30,13 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
-.social__menu {
+.social-menu {
     display: flex;
     justify-content: center;
     gap: 10px;
     cursor: pointer;
 }
-.social__list-link {
+.social-menu__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +53,13 @@
     }
 }
 
-.social__list-icon {
+.social-menu__icon {
     fill: var(--icon-color);
 
     transition: fill var(--transition-dur-and-func);
 
-    .social__list-link:hover &,
-    .social__list-link:focus & {
+    .social-menu__link:hover &,
+    .social-menu__link:focus & {
         fill: var(--contrasting-color);
     }
 }
